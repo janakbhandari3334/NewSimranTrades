@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Simran Traders | Premium Electronics</title>
+    <!-- Google Fonts: Montserrat for headings, Poppins for body -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar glass" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="text-primary">Simran</span> Traders
+            </a>
+            <div class="nav-links">
+                <a href="#home" data-lang="nav_home">Home</a>
+                <a href="#products" data-lang="nav_shop">Shop</a>
+                <a href="#contact" data-lang="nav_contact">Contact</a>
+            </div>
+            <div class="nav-controls">
+                <button id="lang-toggle" class="btn-lang" title="Switch Language">
+                    <span class="lang-en active">EN</span> | <span class="lang-np">नेपाली</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Slideshow -->
+    <header id="home" class="hero">
+        <div class="hero-slider">
+            <!-- Slide 1 -->
+            <div class="slide active" style="background-image: linear-gradient(rgba(10, 25, 47, 0.6), rgba(10, 25, 47, 0.9)), url('https://images.unsplash.com/photo-1550009158-9efff6c641cc?q=80&w=2000&auto=format&fit=crop');">
+                <div class="hero-content fade-up">
+                    <h1 data-lang="hero_title_1">The Future of Electronics</h1>
+                    <p data-lang="hero_subtitle_1">Discover premium smartphones, laptops, and home appliances.</p>
+                    <div class="hero-btns">
+                        <a href="#products" class="btn btn-primary glow" data-lang="btn_shop_now">Shop Now</a>
+                        <a href="#contact" class="btn btn-outline" data-lang="btn_contact_us">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide" style="background-image: linear-gradient(rgba(10, 25, 47, 0.6), rgba(10, 25, 47, 0.9)), url('https://images.unsplash.com/photo-1593640408182-31c70c8268f5?q=80&w=2000&auto=format&fit=crop');">
+                <div class="hero-content fade-up">
+                    <h1 data-lang="hero_title_2">Next-Gen Performance</h1>
+                    <p data-lang="hero_subtitle_2">Upgrade your workflow with ultimate laptop power.</p>
+                    <div class="hero-btns">
+                        <a href="#products" class="btn btn-primary glow" data-lang="btn_shop_now">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide" style="background-image: linear-gradient(rgba(10, 25, 47, 0.6), rgba(10, 25, 47, 0.9)), url('https://images.unsplash.com/photo-1552596956-f5b2b29fc3f9?q=80&w=2000&auto=format&fit=crop');">
+                <div class="hero-content fade-up">
+                    <h1 data-lang="hero_title_3">Cinematic Audio & Vision</h1>
+                    <p data-lang="hero_subtitle_3">Immerse yourself in top-tier entertainment.</p>
+                    <div class="hero-btns">
+                        <a href="#products" class="btn btn-primary glow" data-lang="btn_shop_now">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="prev-slide" aria-label="Previous Slide"><i class="fas fa-chevron-left"></i></button>
+            <button class="next-slide" aria-label="Next Slide"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </header>
+
+    <!-- Brands Marquee Section -->
+    <section class="brands" id="brands">
+        <div class="marquee-wrapper">
+            <div class="marquee-content" id="brand-marquee">
+                <span>Samsung</span>
+                <span>Apple</span>
+                <span>Dell</span>
+                <span>HP</span>
+                <span>Sony</span>
+                <span>Xiaomi</span>
+                <span>LG</span>
+                <!-- Duplicated for seamless loop -->
+                <span>Samsung</span>
+                <span>Apple</span>
+                <span>Dell</span>
+                <span>HP</span>
+                <span>Sony</span>
+                <span>Xiaomi</span>
+                <span>LG</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promotional Banner -->
+    <section id="promotions" class="promotions reveal">
+        <div class="promo-banner glass-panel">
+            <div class="promo-glow"></div>
+            <h2 data-lang="promo_title">Festival Special Discount</h2>
+            <p data-lang="promo_subtitle">Up to 30% OFF on selected items!</p>
+            <button class="btn btn-primary" data-lang="btn_grab_offer">Grab Offer</button>
+        </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <section id="products" class="products reveal">
+        <h2 class="section-title" data-lang="section_products">Featured Products</h2>
+        <div class="product-grid container">
+            
+            <!-- Product 1: Smartphone with 360 viewer -->
+            <div class="product-card glass-card">
+                <span class="badge discount">-10%</span>
+                <div class="product-img-wrapper" onclick="open360Viewer('Samsung Galaxy Z Ultra', 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=600&auto=format&fit=crop')">
+                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=600&auto=format&fit=crop" alt="Premium Smartphone" class="product-img">
+                    <div class="view-360-overlay">
+                        <i class="fas fa-cube"></i> <span data-lang="view_360">360° View</span>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Galaxy Z Ultra</h3>
+                    <p class="product-specs">12GB RAM, 512GB Storage, 120Hz</p>
+                    <div class="product-price" data-price="120000">Rs 1,20,000</div>
+                    <div class="product-actions">
+                        <button class="btn btn-primary btn-sm btn-buy" onclick="openCheckout('Galaxy Z Ultra', 120000)" data-lang="btn_buy_now">Buy Now</button>
+                        <button class="btn btn-outline btn-sm btn-cart" onclick="addToCart()" aria-label="Add to cart" data-lang="btn_add_cart"><i class="fas fa-cart-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2: Laptop -->
+            <div class="product-card glass-card">
+                <div class="product-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=600&auto=format&fit=crop" alt="Pro Laptop" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">MacBook Pro 16"</h3>
+                    <p class="product-specs">M3 Max, 36GB RAM, 1TB SSD</p>
+                    <div class="product-price" data-price="350000">Rs 3,50,000</div>
+                    <div class="product-actions">
+                        <button class="btn btn-primary btn-sm btn-buy" onclick="openCheckout('MacBook Pro 16', 350000)" data-lang="btn_buy_now">Buy Now</button>
+                        <button class="btn btn-outline btn-sm btn-cart" onclick="addToCart()" aria-label="Add to cart" data-lang="btn_add_cart"><i class="fas fa-cart-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3: TV -->
+            <div class="product-card glass-card">
+                <span class="badge new" data-lang="badge_new">New</span>
+                <div class="product-img-wrapper" onclick="open360Viewer('LG OLED 65 TV', 'https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?q=80&w=600&auto=format&fit=crop')">
+                    <img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?q=80&w=600&auto=format&fit=crop" alt="OLED TV" class="product-img">
+                    <div class="view-360-overlay">
+                        <i class="fas fa-cube"></i> <span data-lang="view_360">360° View</span>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">LG OLED 65" 4K Smart TV</h3>
+                    <p class="product-specs">120Hz, Dolby Vision, WebOS</p>
+                    <div class="product-price" data-price="210000">Rs 2,10,000</div>
+                    <div class="product-actions">
+                        <button class="btn btn-primary btn-sm btn-buy" onclick="openCheckout('LG OLED 65 4K Smart TV', 210000)" data-lang="btn_buy_now">Buy Now</button>
+                        <button class="btn btn-outline btn-sm btn-cart" onclick="addToCart()" aria-label="Add to cart" data-lang="btn_add_cart"><i class="fas fa-cart-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Product 4: Smartwatch -->
+            <div class="product-card glass-card">
+                <div class="product-img-wrapper" onclick="open360Viewer('Apple Watch S9', 'https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?q=80&w=600&auto=format&fit=crop')">
+                    <img src="https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?q=80&w=600&auto=format&fit=crop" alt="Smartwatch" class="product-img" style="object-fit:cover;">
+                    <div class="view-360-overlay">
+                        <i class="fas fa-cube"></i> <span data-lang="view_360">360° View</span>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Apple Watch Series 9</h3>
+                    <p class="product-specs">GPS + Cellular, 45mm, ECG</p>
+                    <div class="product-price" data-price="65000">Rs 65,000</div>
+                    <div class="product-actions">
+                        <button class="btn btn-primary btn-sm btn-buy" onclick="openCheckout('Apple Watch Series 9', 65000)" data-lang="btn_buy_now">Buy Now</button>
+                        <button class="btn btn-outline btn-sm btn-cart" onclick="addToCart()" aria-label="Add to cart" data-lang="btn_add_cart"><i class="fas fa-cart-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 5: Headphones -->
+            <div class="product-card glass-card">
+                <div class="product-img-wrapper" onclick="open360Viewer('Sony WH-1000XM5', 'https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=600&auto=format&fit=crop')">
+                    <img src="https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=600&auto=format&fit=crop" alt="Headphones" class="product-img">
+                    <div class="view-360-overlay">
+                        <i class="fas fa-cube"></i> <span data-lang="view_360">360° View</span>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Sony WH-1000XM5</h3>
+                    <p class="product-specs">Wireless Noise Cancelling, 30h Battery</p>
+                    <div class="product-price" data-price="45000">Rs 45,000</div>
+                    <div class="product-actions">
+                        <button class="btn btn-primary btn-sm btn-buy" onclick="openCheckout('Sony WH-1000XM5', 45000)" data-lang="btn_buy_now">Buy Now</button>
+                        <button class="btn btn-outline btn-sm btn-cart" onclick="addToCart()" aria-label="Add to cart" data-lang="btn_add_cart"><i class="fas fa-cart-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 6: Home Appliance / Refrigerator -->
+            <div class="product-card glass-card">
+                <div class="product-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?q=80&w=600&auto=format&fit=crop" alt="Refrigerator" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Samsung Bespoke Fridge</h3>
+                    <p class="product-specs">4-Door Flex, AI Energy Mode, 600L</p>
+                    <div class="product-price" data-price="180000">Rs 1,80,000</div>
+                    <div class="product-actions">
+                        <button class="btn btn-primary btn-sm btn-buy" onclick="openCheckout('Samsung Bespoke Fridge', 180000)" data-lang="btn_buy_now">Buy Now</button>
+                        <button class="btn btn-outline btn-sm btn-cart" onclick="addToCart()" aria-label="Add to cart" data-lang="btn_add_cart"><i class="fas fa-cart-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Store Info & Map -->
+    <section id="store-info" class="store-info reveal">
+        <div class="container dual-col">
+            <div class="info-content">
+                <h2 data-lang="store_title">About New Simran Traders</h2>
+                <p data-lang="store_desc">Your trusted destination for premium electronics. We provide authentic products with reliable warranty and unmatched customer service. Experience the latest technology with us.</p>
+                <div class="location-details">
+                    <div class="icon-box-small"><i class="fas fa-map-marker-alt"></i></div>
+                    <span data-lang="store_location">Lamki Chuha-1, Kailali, Nepal</span>
+                </div>
+                <a href="https://maps.google.com/?q=Lamki+Chuha+1+Kailali+Nepal" target="_blank" class="btn btn-outline mt-3" data-lang="btn_open_map">Open in Google Maps</a>
+            </div>
+            <div class="map-wrapper glass-panel">
+                <!-- Using an iframe map embed -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14144.375531405086!2d81.2333!3d28.6333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDM4JzAwLjAiTiA4McKwMTQnMDAuMCJF!5e0!3m2!1sen!2snp!4v1614000000000!5m2!1sen!2snp" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" title="Store Location Map"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact reveal">
+        <div class="container dual-col">
+            <div class="contact-form-glass glass-panel shadow-cyan">
+                <h2 data-lang="contact_title">Send Inquiry</h2>
+                <form id="inquiryForm" onsubmit="sendInquiry(event)">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Full Name" required data-placeholder="input_name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Email Address" required data-placeholder="input_email">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="4" placeholder="Your Message" required data-placeholder="input_message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100" data-lang="btn_send_msg"><i class="fab fa-whatsapp"></i> Send via WhatsApp</button>
+                </form>
+            </div>
+            <div class="contact-details">
+                <div class="detail-item">
+                    <div class="icon-box"><i class="fas fa-phone"></i></div>
+                    <div>
+                        <h4 data-lang="contact_phone">Phone</h4>
+                        <p>+977-9800000000</p>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <div class="icon-box"><i class="fab fa-whatsapp"></i></div>
+                    <div>
+                        <h4 data-lang="contact_whatsapp">WhatsApp</h4>
+                        <p>+977-9800000000</p>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <div class="icon-box"><i class="fas fa-envelope"></i></div>
+                    <div>
+                        <h4 data-lang="contact_email">Email</h4>
+                        <p>info@simrantraders.com</p>
+                    </div>
+                </div>
+                
+                <h4 class="mt-4 mb-2" data-lang="follow_us">Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="brand">
+                <a href="#" class="logo">
+                    <span class="text-primary">Simran</span> Traders
+                </a>
+                <p class="mt-2 text-muted" data-lang="footer_desc">Premium electronics store offering the best tech gadgets in Nepal. Your reliable partner in modern technology.</p>
+            </div>
+            <div class="links">
+                <h4 data-lang="quick_links">Quick Links</h4>
+                <a href="#home" data-lang="nav_home">Home</a>
+                <a href="#products" data-lang="nav_shop">Shop</a>
+                <a href="#store-info" data-lang="nav_about">About Us</a>
+                <a href="#contact" data-lang="nav_contact">Contact</a>
+            </div>
+            <div class="categories">
+                <h4 data-lang="categories">Categories</h4>
+                <a href="#" data-lang="cat_smartphones">Smartphones</a>
+                <a href="#" data-lang="cat_laptops">Laptops</a>
+                <a href="#" data-lang="cat_tvs">Televisions</a>
+                <a href="#" data-lang="cat_appliances">Home Appliances</a>
+            </div>
+        </div>
+        <div class="copyright container">
+            <p>&copy; 2026 New Simran Traders. <br class="mobile-break"> <span data-lang="footer_design" class="text-primary" style="font-weight: 500;">Website Designed by Janak Tech Solutions.</span></p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/9779800000000" target="_blank" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Modals -->
+    <!-- 360 Viewer Modal -->
+    <div id="modal-360" class="modal">
+        <div class="modal-content glass-panel text-center">
+            <span class="close-modal" onclick="closeModals()">&times;</span>
+            <h3 data-lang="view_360_title" class="text-primary mb-1">360° Interactive View</h3>
+            <p class="text-muted text-sm mb-3" data-lang="view_360_hint"><i class="fas fa-hand-pointer"></i> Drag to rotate the product</p>
+            
+            <h4 id="viewer-product-name" class="mb-2">Product Name</h4>
+            <div class="viewer-container" id="product-360-container">
+                <!-- Using a single image with CSS rotation simulation for this prototype -->
+                <img src="" id="viewer-img" alt="360 View">
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div id="modal-checkout" class="modal">
+        <div class="modal-content glass-panel checkout-panel">
+            <span class="close-modal" onclick="closeModals()">&times;</span>
+            <h3 data-lang="checkout_title" class="text-primary border-bottom pb-2">Complete Purchase</h3>
+            
+            <div class="checkout-details glass-card mt-3 mb-3 p-3">
+                <div class="d-flex justify-between align-center">
+                    <span data-lang="checkout_product" class="text-muted">Product:</span>
+                    <strong id="checkout-item-name" class="text-lg">Product Name</strong>
+                </div>
+                <div class="d-flex justify-between align-center mt-2 pt-2 border-top">
+                    <span data-lang="checkout_price" class="text-muted">Total Price:</span>
+                    <strong id="checkout-item-price" class="text-primary text-xl">Rs 0</strong>
+                </div>
+            </div>
+            
+            <form id="checkoutForm" onsubmit="processCheckout(event)">
+                <div class="form-group">
+                    <label class="text-sm mb-1 d-block text-muted" data-lang="label_name">Full Name</label>
+                    <input type="text" id="custName" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label class="text-sm mb-1 d-block text-muted" data-lang="label_phone">Phone Number</label>
+                    <input type="tel" id="custPhone" placeholder="+977-98XXXXXXXX" required>
+                </div>
+                <div class="form-group">
+                    <label class="text-sm mb-1 d-block text-muted" data-lang="pay_method">Payment Method</label>
+                    <select id="paymentMethod" class="w-100 p-3 glass-input select-styled" onchange="toggleQR()">
+                        <option value="cod" data-lang="pay_cod">Cash on Delivery</option>
+                        <option value="qr" data-lang="pay_now">Pay Now (QR Code / Bank Transfer)</option>
+                    </select>
+                </div>
+                
+                <div id="qr-container" class="qr-code-box hidden fade-in">
+                    <!-- Dynamic QR generation via JS for the sake of Demo (using api.qrserver.com) -->
+                    <img id="qr-img" src="" alt="QR Code" class="shadow">
+                    <p class="text-sm text-center mt-2 text-primary font-bold" data-lang="qr_scan">Scan to pay via eSewa / Khalti / Mobile Banking</p>
+                    <p class="text-xs text-center text-muted mt-1">Amount: <span id="qr-amount">0</span></p>
+                </div>
+
+                <div class="checkout-footer mt-4">
+                    <button type="submit" class="btn btn-primary w-100 glow-btn" data-lang="btn_confirm_order">
+                        <i class="fab fa-whatsapp mr-2"></i> Confirm Order via WhatsApp
+                    </button>
+                    <p class="text-xs text-center text-muted mt-2"><i class="fas fa-shield-alt"></i> Secure checkout provided by Simran Traders</p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
